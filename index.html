@@ -51,77 +51,13 @@
         height: 58px;
       }
     </style>
-    <script>
-      window.__ENV = {"RELEASE_VERSION":"da4277c3","BUILD_COMMIT_SHA":"da4277c3992000f3a65a63cac0549c959f97c66d","TARGET":"online","HOME_HOST":"www.dora.run","RUN_HOST":"dora.run","PREVIEW_HOST":"preview.dora.run","SWIMLANE_HOST":"","API_HOST":"api-us.dora.run","NEO_API_HOST":"neo-api.dora.run","CDN_NEO_API_HOST":"cdn-neo-api.dora.run","STATIC_ASSETS_HOST":"cdn-static-e.dora.run","USER_ASSETS_HOST":"cdn-design-e.dora.run","CDN_IMGS_HOST":"cdn-imgs.dora.run","CDN_PUBLIC_DOC_HOST":"cdn-public-document-dora-e.dora.run","REALTIME_HOST":"realtime-next-us.dora.run"};
-      window.__ASSET_PREFIX = 'https://cdn-static-e.dora.run/dora_runner_web';
-      window.__ASSET_MANIFEST = {"main.dart.js":"main.dart.ee4468a1.js","threed_renderer/build/editor.js.LICENSE.txt":"threed_renderer.e578ddea/build/editor.js.LICENSE.txt","threed_renderer/build/glbCompress.js":"threed_renderer.e578ddea/build/glbCompress.js","threed_renderer/build/runner.js":"threed_renderer.e578ddea/build/runner.js","threed_renderer/build/editor.js":"threed_renderer.e578ddea/build/editor.js","threed_renderer/build/chunk.bundle.js":"threed_renderer.e578ddea/build/chunk.bundle.js","threed_renderer/build/runner.js.LICENSE.txt":"threed_renderer.e578ddea/build/runner.js.LICENSE.txt","public/error_pages/internal_error.html":"public/error_pages/internal_error.5610c2b8.html","public/error_pages/not_found.html":"public/error_pages/not_found.32a93b53.html","public/previewer.css":"public/previewer.d2c4671b.css","public/loading.gif":"public/loading.6330c237.gif","public/made_in_dora/tag_icon_white.webp":"public/made_in_dora/tag_icon_white.91514bb1.webp","public/made_in_dora/ai_tag_icon_white.png":"public/made_in_dora/ai_tag_icon_white.1717c340.png","public/made_in_dora/tag_icon.png":"public/made_in_dora/tag_icon.9712852f.png","public/made_in_dora/ai_tag_icon.png":"public/made_in_dora/ai_tag_icon.74d52789.png","public/made_in_dora/ai_tag_bg.png":"public/made_in_dora/ai_tag_bg.1ad890be.png","public/previewer.js":"public/previewer.3d926f51.js"};
-    </script>
-    <script>
-      function setCookie(name, value, days) {
-  var expires = '';
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    expires = '; expires=' + date.toUTCString();
-  }
-  let domain = '';
-  if (window.location.hostname.includes('test.dora.run')) {
-    domain = '; domain=.test.dora.run';
-  } else if (window.location.hostname.includes('prerelease.dora.run')) {
-    domain = '; domain=.prerelease.dora.run';
-  } else if (window.location.hostname.includes('dora.run')) {
-    domain = '; domain=.dora.run';
-  }
-  document.cookie =
-    name + '=' + encodeURIComponent(value) + expires + '; path=/' + domain;
-}
+  
+  
 
-const utmUrlParamKeys = [
-  'utm_source',
-  'utm_medium',
-  'utm_campaign',
-  'utm_content',
-  'utm_term',
-];
 
-const doraUrlParamKeys = ['coupon'];
+    
+  
 
-try {
-  var urlParams = new URLSearchParams(window.location.search);
-  let pscd = urlParams.get('pscd');
-  let ps_partner_key = urlParams.get('ps_partner_key');
-  let ps_xid = urlParams.get('ps_xid');
-  let gsxid = urlParams.get('gsxid');
-  let gspk = urlParams.get('gspk');
-  if (ps_partner_key && ps_xid && gsxid && gspk) {
-    setCookie('pscd', pscd, 30);
-    setCookie('ps_partner_key', ps_partner_key, 30);
-    setCookie('ps_xid', ps_xid, 30);
-    setCookie('gsxid', gsxid, 30);
-    setCookie('growSumoPartnerKey', gspk, 30);
-    setCookie('ps_mode', 'trackingV2', 30);
-  }
-  for (const key of utmUrlParamKeys) {
-    if (urlParams.has(key)) {
-      setCookie(key, urlParams.get(key), 30);
-    }
-  }
-  for (const urlParamKey of doraUrlParamKeys) {
-    const key = `dora_${urlParamKey}`;
-    const value = urlParams.get(urlParamKey);
-    if (value) setCookie(key, value, 30);
-  }
-} catch (error) {}
-
-    </script>
-    
-    <script src="https://cdn-static-e.dora.run/dora_runner_web/threed_renderer.e578ddea/build/runner.js"></script>
-    
-    
-    
-    <script defer src="https://cdn-static-e.dora.run/dora_runner_web/main.dart.ee4468a1.js"></script>
-  <script>window.DORA_PROJECT_PREPARATION="{\"summary\":{},\"editorVersion\":\"v2\",\"releaseVersion\":\"e84cbd197ec20f3d260cc4961ac06ed7\",\"domain\":\"r0wa9pal.dora.run\",\"name\":\"Untitled 4\",\"id\":\"2162458\",\"api\":{\"/action\":{\"version\":\"7c46a108-d6d1-4c06-b4ef-978616bea2de\"},\"/project/get\":{\"version\":\"e84cbd197ec20f3d260cc4961ac06ed7\"},\"/meta\":{\"version\":\"d62049ac-758c-4290-b960-8e5cbdcd0863\"}}}";</script><script>window.doraAppTitle="personal bio and links";</script><!-- Open Graph / Facebook -->
-            <meta property="og:type" content="website">
             <meta property="og:title" content="My Dora Site">
             <meta property="og:description" content="Made in Dora">
             <meta property="og:image" content="https://cdn-static-e.dora.run/public/image_placeholder.png">
@@ -135,63 +71,7 @@ try {
   <body>
     <div id="loading"></div>
     
-    
-    <script>
-      var loading = document.getElementById('loading');
-if (loading) {
-  loading.style.display = 'flex';
-  loading.style.zIndex = 100;
-  var queryParameters = new URLSearchParams(window.location.search);
-  var loadingUrl = window.loadingUrl || queryParameters.get('loadingUrl');
-  var loadingBg = window.loadingBg || queryParameters.get('loadingBg');
-
-  if (loadingUrl) {
-    if (loadingUrl.endsWith('.json') && bodymovin) {
-      var parentDiv = document.getElementById('loading');
-      var childDiv = document.createElement('div');
-      childDiv.id = 'lottie-container';
-      parentDiv.appendChild(childDiv);
-
-      var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie-container'),
-        path: loadingUrl,
-        renderer: 'svg',
-      });
-    } else if (
-      loadingUrl.endsWith('.gif') ||
-      loadingUrl.endsWith('.apng') ||
-      loadingUrl.endsWith('.svg') ||
-      loadingUrl.endsWith('.png')
-    ) {
-      loading.innerHTML = `
-            <picture>
-            <img src="${loadingUrl}" alt="loading" style="opacity: 1;">
-            </picture>
-        `;
-    } else {
-    }
-  } else {
-    if (window.__ASSET_PREFIX && window.__ASSET_MANIFEST) {
-      let url = `${window.__ASSET_PREFIX}/${window.__ASSET_MANIFEST['public/loading.gif']}`;
-      loading.innerHTML = `
-        <picture>
-        <img src="${url}" alt="loading" style="opacity: 1;">
-        </picture>
-    `;
-    }
-  }
-  if (loadingBg) {
-    loading.style.backgroundColor = loadingBg;
-    loading.style.backgroundImage = loadingBg;
-  }
-
-  const hideLoading = () => (loading.style.display = 'none');
-
-  window.addEventListener('__dora_app_error', () => hideLoading());
-  window.addEventListener('__dora_app_mounted', () => hideLoading());
-}
-
-    </script>
+   
   <div class="seo-content" style="opacity: 0; white-space: pre; display: none;">
 <p>Email</p>
 <p>Twitter</p>
